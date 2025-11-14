@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b189e74779e63a549af2e7569097c6ff
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 299594
+  packageName: LowPoly School
+  packageVersion: 1.0
+  assetPath: Assets/TirgamesAssets/PolyWorld/Scenes/PolyChemistryRoom/LightingData.asset
+  uploadId: 712569
