@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: 6f259097ffe487f4baf8463ee2e02deb
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235559
+  packageName: Violet Themed UI
+  packageVersion: 1.2
+  assetPath: Assets/Violet Theme Ui/NEW Panels/Panel 1 BUBBLE GUM.png
+  uploadId: 767621
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -46,13 +53,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 39, y: 39, z: 47, w: 41}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -109,6 +116,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -139,7 +159,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 6c2a644e0cf8abf4b819bcd908924500
-    internalID: 0
+    internalID: 841464281
     vertices: []
     indices: 
     edges: []
@@ -154,10 +174,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 235559
-  packageName: Violet Themed UI
-  packageVersion: 1.2
-  assetPath: Assets/Violet Theme Ui/NEW Panels/Panel 1 BUBBLE GUM.png
-  uploadId: 767621
