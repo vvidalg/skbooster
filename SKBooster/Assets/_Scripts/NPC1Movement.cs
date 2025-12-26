@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NPC1AnimationBlend : MonoBehaviour
+public class NPC1Movement : MonoBehaviour
 {
     public Animator animator;
     public Transform[] waypoints;
@@ -13,6 +13,8 @@ public class NPC1AnimationBlend : MonoBehaviour
     private bool waiting = false;
     private float waitCounter = 0f;
     private Vector3 lastPosition;
+    
+    public bool canMove = true;
 
     void Start()
     {
@@ -22,6 +24,13 @@ public class NPC1AnimationBlend : MonoBehaviour
 
     void Update()
     {
+        if (!canMove)
+        {
+            animator.SetFloat("velocity", 0f);
+            animator.SetFloat("moveX", 0f);
+            animator.SetFloat("moveY", 0f);
+            return;
+        }
         if (waypoints.Length == 0) return;
 
 if (waiting)
