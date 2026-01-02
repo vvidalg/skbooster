@@ -20,7 +20,7 @@ public class XPUI : MonoBehaviour
     private void Start()
     {
   
-        UpdateXP(0);
+        xpText.text = $"XP: {PlayerPrefs.GetInt("CurrentXP", 0)}";
     }
 
     private void UpdateXP(int newXP)
