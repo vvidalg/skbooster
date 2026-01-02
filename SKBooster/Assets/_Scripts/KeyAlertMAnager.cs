@@ -1,31 +1,29 @@
 using System.Collections;
 using UnityEngine;
 
-public class XPAlertManager : MonoBehaviour
+public class KeyAlertMAnager : MonoBehaviour
 {
-    [SerializeField] private GameObject xpAlertPanel;
+    [SerializeField] private GameObject keyAlertPanel;
     [SerializeField] private float alertDuration = 1f;
 
     private Coroutine alertCoroutine;
-
+    
     private void OnEnable()
     {
-        GameManager.OnXPChanged += HandleXPChanged;
+        GameManager.OnKeyyChanged += HandleKeyChanged;
     }
 
     private void OnDisable()
     {
-        GameManager.OnXPChanged -= HandleXPChanged;
+        GameManager.OnKeyyChanged -= HandleKeyChanged;
     }
 
-    private void HandleXPChanged(int newXP)
+    private void HandleKeyChanged(bool key)
     {
-        if (xpAlertPanel == null)
+        if (keyAlertPanel == null || !key)
         {
-            Debug.LogError("XPAlertPanel no asignado en XPAlertListener");
             return;
         }
-
         if (alertCoroutine != null)
             StopCoroutine(alertCoroutine);
 
@@ -34,9 +32,9 @@ public class XPAlertManager : MonoBehaviour
 
     private IEnumerator ShowAlert()
     {
-        xpAlertPanel.SetActive(true);
+        keyAlertPanel.SetActive(true);
         yield return new WaitForSeconds(alertDuration);
-        xpAlertPanel.SetActive(false);
+        keyAlertPanel.SetActive(false);
         alertCoroutine = null;
     }
 }

@@ -1,0 +1,130 @@
+{
+  "quizId": "estilos",
+  "title": "[Estilos de Comunicación]",
+  "contents": [
+    {
+      "title": "Qué son los estilos de comunicación",
+      "text": "Los estilos de comunicación son las formas habituales de expresar y recibir información, incluyendo lo que decimos, cómo lo decimos (tono, gestos, postura) y cómo reaccionamos a los demás, siendo los principales el asertivo, pasivo y agresivo, que definen nuestras relaciones personales"
+    },
+    {
+      "title": "Definición Estilo Pasivo",
+      "text": "La comunicación pasiva se caracteriza por evitar el conflicto a toda costa. Las personas que utilizan este estilo de comunicación tienden a ceder fácilmente ante las demandas de los demás, incluso cuando sus propias necesidades no se están satisfaciendo. Pueden tener dificultades para expresar sus opiniones o deseos y a menudo se sienten resentidas o frustradas como resultado."
+    },
+    {
+      "title": "Algunas Características del Estilo Pasivo",
+      "text": "- Evitar confrontaciones.\n- No expresar opiniones o deseos.\n- Sentirse incapaz de decir «no».\n- Priorizar las necesidades de los demás sobre las propias."
+    },
+    {
+      "title": "Definición Estilo Agresivo",
+      "text": "La comunicación agresiva se caracteriza por ser dominante y confrontativa. Las personas que utilizan este estilo de comunicación pueden buscar constantemente imponer sus opiniones y deseos a los demás, sin tener en cuenta los sentimientos o necesidades de estos. La comunicación agresiva puede generar conflictos y resentimientos en las relaciones interpersonales."
+    },
+    {
+      "title": "Algunas Características del Estilo Agresivo",
+      "text": "- Dominar las conversaciones.\n- Culpar a los demás.\n- Utilizar un tono de voz elevado.\n- No escuchar activamente a los demás."
+    },
+    {
+      "title": "Definición Estilo Asertivo",
+      "text": "La comunicación asertiva se encuentra en el punto medio entre la pasividad y la agresividad. Se caracteriza por expresar opiniones y deseos de manera clara y respetuosa, al mismo tiempo que se reconoce y se respeta a los demás. Las personas que utilizan la comunicación asertiva son capaces de establecer límites saludables, expresar sus necesidades y resolver conflictos de manera constructiva."
+    },
+    {
+      "title": "Algunas Características del Estilo Asertivo",
+      "text": "- Expresar opiniones de manera clara y directa.\n- Escuchar activamente a los demás.\n- Respetar los derechos y opiniones de los demás.\n- Establecer límites saludables."
+    },
+    {
+      "title": "La importancia del Estilo Asertivo",
+      "text": "La comunicación asertiva es fundamental para construir relaciones saludables y satisfactorias. Al desarrollar habilidades asertivas, podemos mejorar nuestra autoestima, fortalecer nuestras relaciones y manejar conflictos de manera efectiva."
+    }
+  ],
+  "questions": [
+    {
+      "question": "¿Cuales son los principales estilos de comunicación?",
+      "answers": [
+        "Asertivo, Agresivo y Adaptativo",
+        "Pasivo, Activo y Asertivo",
+        "Pasivo, Agresivo y Asertivo"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "¿Qué caracteriza al estilo asertivo?",
+      "answers": [
+        "Ignorar las emociones ajenas",
+        "Expresar ideas con respeto",
+        "Evitar cualquier conflicto"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "¿Qué estilo busca imponer su punto de vista?",
+      "answers": [
+        "Pasivo",
+        "Asertivo",
+        "Agresivo"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "¿Qué define al estilo pasivo?",
+      "answers": [
+        "Defender los derechos propios respetando a los demás",
+        "Evitar expresar opiniones y ceder ante los demás",
+        "Imponer la propia opinión"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "¿Qué estilo de comunicación permite construir relaciones saludables y satisfactorias?",
+      "answers": [
+        "Asertivo",
+        "Agresivo",
+        "Pasivo"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Indica qué estilo de comunicación se está utilizando\n- Bueno, vale. Hacemos lo que queráis, a mi me da igual.",
+      "answers": [
+        "Asertivo",
+        "Agresivo",
+        "Pasivo"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Indica qué estilo de comunicación se está utilizando\n- No tienes ni idea. Cállate y hazme caso",
+      "answers": [
+        "Asertivo",
+        "Agresivo",
+        "Pasivo"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Indica qué estilo de comunicación se está utilizando\n- Hoy no puedo quedar, pero gracias por la invitación",
+      "answers": [
+        "Asertivo",
+        "Agresivo",
+        "Pasivo"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "¿Qué estilo comunicativo tiene como una de sus características la incapacidad o dificultad para decir no ante planes o propuestas que no quiere o puede realizar",
+      "answers": [
+        "Asertivo",
+        "Agresivo",
+        "Pasivo"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Cual es el estilo de comunicación que debemos desarrollar para poder disfrutar de relaciones interpersonales saludables y manejar conflictos de forma efectiva",
+      "answers": [
+        "Asertivo",
+        "Agresivo",
+        "Pasivo"
+      ],
+      "correctAnswer": 0
+    }
+  ]
+}

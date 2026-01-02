@@ -1,42 +1,39 @@
 using System.Collections;
 using UnityEngine;
 
-public class XPAlertManager : MonoBehaviour
+public class LevelAlertManager : MonoBehaviour
 {
-    [SerializeField] private GameObject xpAlertPanel;
+    [SerializeField] private GameObject levelAlertPanel;
     [SerializeField] private float alertDuration = 1f;
-
+    
     private Coroutine alertCoroutine;
-
     private void OnEnable()
     {
-        GameManager.OnXPChanged += HandleXPChanged;
+        GameManager.OnLevelChanged += HandleLevelChanged;
     }
 
     private void OnDisable()
     {
-        GameManager.OnXPChanged -= HandleXPChanged;
+        GameManager.OnLevelChanged -= HandleLevelChanged;
     }
-
-    private void HandleXPChanged(int newXP)
+    private void HandleLevelChanged(int newlevel)
     {
-        if (xpAlertPanel == null)
+        if (levelAlertPanel == null||newlevel==0)
         {
-            Debug.LogError("XPAlertPanel no asignado en XPAlertListener");
             return;
         }
-
         if (alertCoroutine != null)
             StopCoroutine(alertCoroutine);
 
         alertCoroutine = StartCoroutine(ShowAlert());
     }
+    
 
     private IEnumerator ShowAlert()
     {
-        xpAlertPanel.SetActive(true);
+        levelAlertPanel.SetActive(true);
         yield return new WaitForSeconds(alertDuration);
-        xpAlertPanel.SetActive(false);
+        levelAlertPanel.SetActive(false);
         alertCoroutine = null;
     }
 }
