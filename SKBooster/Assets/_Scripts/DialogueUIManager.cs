@@ -114,95 +114,31 @@ public class DialogueUIManager : MonoBehaviour
         Interact(VD.assigned);
     }
 
-
-    //Input related stuff (scroll through player choices and update highlight)
-    /*void Update()
-    {
-        //Lets just store the Node Data variable for the sake of fewer words
-        var data = VD.nodeData;
-
-        if (VD.isActive) //If there is a dialogue active
-        {
-            //Scroll through Player dialogue options if dialogue is not paused and we are on a player node
-            //For player nodes, NodeData.commentIndex is the index of the picked choice
-            if (!data.pausedAction && !animatingText && data.isPlayer && !useNavigation)
-            {
-                if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
-                {
-                    if (data.commentIndex < availableChoices - 1)
-                        data.commentIndex++;
-                }
-                if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
-                {
-                    if (data.commentIndex > 0)
-                        data.commentIndex--;
-                }
-                //Color the Player options. Blue for the selected one
-                for (int i = 0; i < maxPlayerChoices.Count; i++)
-                {
-                    maxPlayerChoices[i].transform.GetChild(0).GetComponent<Text>().color = Color.white;
-                    if (i == data.commentIndex) maxPlayerChoices[i].transform.GetChild(0).GetComponent<Text>().color = Color.yellow;
-                }
-            }
-
-            //Detect interact key
-            if (Input.GetKeyDown(interactionKey))
-            {
-                Interact(VD.assigned);
-            }
-            if (Input.GetMouseButtonDown(0))
-            {
-                if (animatingText)
-                {
-                    Interact(VD.assigned);
-                }
-                else if (!data.isPlayer)
-                {
-                    Interact(VD.assigned);
-                }
-            }
-        }
-        //Note you could also use Unity's Navi system, in which case you would tick the useNavigation flag.
-    }*/
     void Update()
     {
         var data = VD.nodeData;
 
         if (!VD.isActive) return;
 
-        // --- NAVEGACIÓN SOLO CON TECLADO ---
         if (!data.pausedAction && !animatingText && data.isPlayer)
         {
-            /*// Mover selección con W/S
-            if (Input.GetKeyDown(KeyCode.S))
-                data.commentIndex = Mathf.Min(data.commentIndex + 1, availableChoices - 1);
 
-            if (Input.GetKeyDown(KeyCode.W))
-                data.commentIndex = Mathf.Max(data.commentIndex - 1, 0);*/
-            
             if (Input.GetKeyDown(KeyCode.E))
                 data.commentIndex = Mathf.Min(data.commentIndex + 1, availableChoices - 1);
             if (Input.GetKeyDown(KeyCode.Q))
                 data.commentIndex = Mathf.Max(data.commentIndex - 1, 0);
-            // Resaltar la opción seleccionada
-            /*for (int i = 0; i < maxPlayerChoices.Count; i++)
-            {
-                Text txt = maxPlayerChoices[i].transform.GetChild(0).GetComponent<Text>();
-                txt.color = (i == data.commentIndex) ? Color.yellow : Color.white;
-            }*/
+
             for (int i = 0; i < availableChoices; i++)
             {
                 Text txt = maxPlayerChoices[i].transform.GetChild(0).GetComponent<Text>();
                 txt.color = (i == data.commentIndex) ? Color.yellow : Color.white;
             }
 
-            // Confirmar selección con TAB
             if (Input.GetKeyDown(KeyCode.Tab))
             {
                 SelectChoice(data.commentIndex);
             }
         }
-        // --- INTERACCIÓN CON NODOS NPC (si no es un nodo de jugador) ---
         else if (!data.isPlayer)
         {
             if (Input.GetKeyDown(interactionKey))
@@ -211,7 +147,6 @@ public class DialogueUIManager : MonoBehaviour
             }
         }
     }
-
     //When we call VD.Next, nodeData will change. When it changes, OnNodeChange event will fire
     //We subscribed our UpdateUI method to the event in the Begin method
     //Here's where we update our UI
@@ -232,16 +167,7 @@ public class DialogueUIManager : MonoBehaviour
         if (data.isPlayer)
         {
             //Set node sprite if there's any, otherwise try to use default sprite
-           /* if (data.sprite != null)
-                playerSprite.sprite = data.sprite;
-            else if (VD.assigned.defaultPlayerSprite != null)
-                playerSprite.sprite = VD.assigned.defaultPlayerSprite;
 
-            SetChoices(data.comments);
-
-            //If it has a tag, show it, otherwise let's use the alias we set in the VIDE Assign
-            if (data.tag.Length > 0)
-                playerLabel.text = data.tag;*/
            ShowPlayerOptions(data.comments);
             //Sets the player container on
             playerContainer.SetActive(true);

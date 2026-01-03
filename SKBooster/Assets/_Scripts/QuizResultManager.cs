@@ -10,20 +10,6 @@ public class QuizResultManager : MonoBehaviour
     public static event Action<string, bool> OnQuizFinished;
 
 
-    /*private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-            Debug.Log("[QuizResultManager] Creado y persistente");
-        }
-        else
-        {
-            Destroy(gameObject);
-            Debug.Log("[QuizResultManager] Duplicado destruido");
-        }
-    }*/
     public void SetResult(string quizId, bool passed)
     {
         results[quizId] = passed;
