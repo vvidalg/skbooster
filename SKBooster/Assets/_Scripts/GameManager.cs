@@ -9,8 +9,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int currentXP = 0;
     [SerializeField] private bool hasLevelKey = false;
     [SerializeField] private int currentLevel = 0;
+    [SerializeField] private int maxLevel = 2;
 
-    
+    [Header("End Game")] 
+    [SerializeField] private GameObject endGameManager;
+        
     public int CurrentXP => currentXP;
     public bool HasLevelKey => hasLevelKey;
     public int CurrentLevel => currentLevel;
@@ -37,7 +40,7 @@ public class GameManager : MonoBehaviour
 
         transform.position = savedPosition;
     }
-    
+
     public void SaveData()
     {
         PlayerPrefs.SetInt("CurrentXP", currentXP);
@@ -54,6 +57,7 @@ public class GameManager : MonoBehaviour
         OnXPChanged?.Invoke(currentXP);
         OnLevelChanged?.Invoke(currentLevel);
         OnKeyyChanged?.Invoke(hasLevelKey);
+        LevelUp();
         Debug.Log("[GameManager] Datos cargados desde PlayerPrefs: ");
     }
 
@@ -86,21 +90,34 @@ public class GameManager : MonoBehaviour
         SaveData();
     }
 
-    void LevelUp()
+ void LevelUp()
     {
         if  (currentXP >= (750 * (currentLevel + 1)))
         {
             if (hasLevelKey)
             {
                 currentLevel++;
-                OnLevelChanged?.Invoke(currentLevel);
-                hasLevelKey = false;
+
+                PlayerPrefs.SetInt("CurrentLevel", currentLevel);
                 PlayerPrefs.SetInt("HasLevelKey", 0);
                 PlayerPrefs.Save();
+
+                OnLevelChanged?.Invoke(currentLevel);
+
+                hasLevelKey = false;
                 OnKeyyChanged?.Invoke(hasLevelKey);
+
+                EndGame();
             }
 
+            
+
         }
+    }
+
+    void EndGame()
+    {
+        endGameManager.SetActive(currentLevel >= maxLevel);
     }
 
 }

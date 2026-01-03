@@ -8,6 +8,9 @@ public class LevelUI : MonoBehaviour
     private void OnEnable()
     {
         GameManager.OnLevelChanged += UpdateLevel;
+
+        if (GameManager.Instance != null)
+            UpdateLevel(GameManager.Instance.CurrentLevel);
     }
 
     private void OnDisable()
