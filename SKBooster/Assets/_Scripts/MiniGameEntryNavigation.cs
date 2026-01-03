@@ -10,8 +10,7 @@ public class MiniGameEntryNavigation : MonoBehaviour
 
     private void OnEnable()
     {
-        // Selecciona el botón Jugar al abrir el panel
-        EventSystem.current.SetSelectedGameObject(playButton.gameObject);
+    EventSystem.current.SetSelectedGameObject(playButton.gameObject);
     }
 
     private void Update()

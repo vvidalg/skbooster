@@ -39,8 +39,7 @@ public class QuizController : MonoBehaviour
 
 private void Start()
 {
-    //quizData = QuizLoader.Load(QuizSessionManager.Instance.CurrentQuizId);
-    quizData = QuizLoader.Load(PlayerPrefs.GetString("CurrentQuizId"));
+   quizData = QuizLoader.Load(PlayerPrefs.GetString("CurrentQuizId"));
     if (quizData == null)
     {
         Debug.LogError("QuizData no cargado");
@@ -130,7 +129,6 @@ private void Start()
         tryAgainPanel.SetActive(!passed);
         PlayerPrefs.SetInt("HasLevelKey", passed ? 1 : 0);
         Debug.Log("[QuizController] EndQuiz" + PlayerPrefs.GetInt("HasLevelKey"));
-        //QuizResultManager.Instance.SetResult(quizData.quizId, passed);
         Debug.Log("[QuizController] EndQuiz" + quizData.quizId+" y " + passed);
         
     }

@@ -21,18 +21,6 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        /*if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-            LoadData();
-            Debug.Log("[GameManager] Creado y persistente");
-        }
-        else
-        {
-            Debug.Log("[GameManager] Duplicado detectado, destruyendo este objeto");
-            Destroy(gameObject);
-        }*/
         LoadData();
     }
 
@@ -111,7 +99,6 @@ public class GameManager : MonoBehaviour
                 PlayerPrefs.Save();
                 OnKeyyChanged?.Invoke(hasLevelKey);
             }
-
 
         }
     }
