@@ -50,7 +50,7 @@ private void Start()
     ShowMainMenu();
 }
 
-    void ShowContent()
+    public void ShowContent()
     {
         contentPanel.SetActive(true);
         quizPanel.SetActive(false);
