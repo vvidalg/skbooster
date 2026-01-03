@@ -1,0 +1,130 @@
+{
+  "quizId": "escucha",
+  "title": "[La Escucha Activa]",
+  "contents": [
+    {
+      "title": "Qué es la escucha activa",
+      "text": "La escucha activa es una forma de comunicarse que consiste en prestar atención real y consciente a la otra persona, mostrando interés por lo que dice, cómo lo dice y cómo se siente, sin interrumpir ni juzgar. Por ejemplo, cuando un amigo te cuenta un problema y tú le miras, asientes y le preguntas para entender mejor, estás practicando escucha activa."
+    },
+    {
+      "title": "Definición de Escucha No Activa",
+      "text": "La escucha no activa ocurre cuando aparentamos escuchar, pero en realidad no prestamos atención. Esto sucede, por ejemplo, cuando alguien nos habla y estamos mirando el móvil o pensando en qué responder. Este tipo de escucha puede generar malentendidos y hacer que la otra persona se sienta ignorada."
+    },
+    {
+      "title": "Características de la Escucha No Activa",
+      "text": "- Interrumpir frecuentemente, como cortar a alguien antes de que termine.\n- No mantener contacto visual.\n- Estar distraído o pensando en otra cosa.\n- Restar importancia a lo que dice la otra persona."
+    },
+    {
+      "title": "Definición de Escucha Selectiva",
+      "text": "La escucha selectiva se da cuando solo se presta atención a las partes del mensaje que nos interesan. Por ejemplo, escuchar solo la hora de una quedada y no el lugar. Este tipo de escucha puede provocar confusiones y dificulta una comunicación clara."
+    },
+    {
+      "title": "Características de la Escucha Selectiva",
+      "text": "- Escuchar solo lo que interesa.\n- Sacar conclusiones rápidas.\n- Ignorar emociones o detalles importantes.\n- Cambiar de tema sin responder a lo que se dijo."
+    },
+    {
+      "title": "Definición de Escucha Activa",
+      "text": "La escucha activa implica prestar atención total a la persona que habla, mostrando interés mediante gestos, palabras y preguntas. Por ejemplo, decir \"entiendo que estés enfadado\" o \"¿cómo te hizo sentir eso?\" demuestra que estás intentando comprender tanto el mensaje como las emociones."
+    },
+    {
+      "title": "Características de la Escucha Activa",
+      "text": "- Mantener contacto visual.\n- No interrumpir mientras la otra persona habla.\n- Hacer preguntas para comprender mejor.\n- Mostrar empatía y respeto."
+    },
+    {
+      "title": "La importancia de la Escucha Activa",
+      "text": "La escucha activa es clave para mejorar las relaciones personales, especialmente durante la adolescencia. Por ejemplo, escuchar de verdad a un amigo puede evitar discusiones y fortalecer la confianza, haciendo que las personas se sientan comprendidas y valoradas."
+    }
+  ],
+  "questions": [
+    {
+      "question": "¿Qué es la escucha activa?",
+      "answers": [
+        "Escuchar solo cuando el tema nos interesa",
+        "Prestar atención real y comprender a la otra persona",
+        "Esperar a que la otra persona termine para hablar"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "¿Qué caracteriza a la escucha no activa?",
+      "answers": [
+        "Mostrar empatía",
+        "Interrumpir y distraerse",
+        "Hacer preguntas para entender mejor"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "¿Qué tipo de escucha consiste en atender solo a partes del mensaje?",
+      "answers": [
+        "Escucha activa",
+        "Escucha empática",
+        "Escucha selectiva"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "¿Qué acción es propia de la escucha activa?",
+      "answers": [
+        "Mirar el móvil mientras hablan",
+        "Interrumpir para dar tu opinión",
+        "Mantener contacto visual y atención"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "¿Por qué es importante la escucha activa?",
+      "answers": [
+        "Porque hace la conversación más corta",
+        "Porque ayuda a mejorar las relaciones",
+        "Porque permite imponer tu opinión"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Indica qué tipo de escucha se está utilizando\n- Ajá, sí… espera que conteste este mensaje.",
+      "answers": [
+        "Escucha activa",
+        "Escucha selectiva",
+        "Escucha no activa"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Indica qué tipo de escucha se está utilizando\n- Solo escuché la parte que me interesaba.",
+      "answers": [
+        "Escucha activa",
+        "Escucha selectiva",
+        "Escucha no activa"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Indica qué tipo de escucha se está utilizando\n- Entiendo cómo te sientes, ¿quieres contarme más?",
+      "answers": [
+        "Escucha activa",
+        "Escucha selectiva",
+        "Escucha no activa"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "¿Qué tipo de escucha puede provocar malentendidos y conflictos?",
+      "answers": [
+        "Escucha activa",
+        "Escucha no activa",
+        "Escucha empática"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "¿Qué tipo de escucha debemos desarrollar para comunicarnos mejor con los demás?",
+      "answers": [
+        "Escucha selectiva",
+        "Escucha no activa",
+        "Escucha activa"
+      ],
+      "correctAnswer": 2
+    }
+  ]
+}
